@@ -32,7 +32,7 @@ Partial Class Accounts
         PictureBox8 = New PictureBox()
         PictureBox9 = New PictureBox()
         Button1 = New Button()
-        Button2 = New Button()
+        btnC = New Button()
         btnDashboard = New Button()
         Label1 = New Label()
         PictureBox1 = New PictureBox()
@@ -61,7 +61,7 @@ Partial Class Accounts
         grpInfo = New GroupBox()
         Label8 = New Label()
         ComboBox1 = New ComboBox()
-        Button3 = New Button()
+        btnP = New Button()
         CType(PictureBox7, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox8, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox9, ComponentModel.ISupportInitialize).BeginInit()
@@ -174,17 +174,17 @@ Partial Class Accounts
         Button1.TabIndex = 53
         Button1.UseVisualStyleBackColor = False
         ' 
-        ' Button2
+        ' btnC
         ' 
-        Button2.BackColor = Color.Transparent
-        Button2.BackgroundImage = CType(resources.GetObject("Button2.BackgroundImage"), Image)
-        Button2.FlatStyle = FlatStyle.Flat
-        Button2.ForeColor = Color.FromArgb(CByte(252), CByte(252), CByte(252))
-        Button2.Location = New Point(10, 242)
-        Button2.Name = "Button2"
-        Button2.Size = New Size(50, 37)
-        Button2.TabIndex = 52
-        Button2.UseVisualStyleBackColor = False
+        btnC.BackColor = Color.Transparent
+        btnC.BackgroundImage = CType(resources.GetObject("btnC.BackgroundImage"), Image)
+        btnC.FlatStyle = FlatStyle.Flat
+        btnC.ForeColor = Color.FromArgb(CByte(252), CByte(252), CByte(252))
+        btnC.Location = New Point(10, 242)
+        btnC.Name = "btnC"
+        btnC.Size = New Size(50, 37)
+        btnC.TabIndex = 52
+        btnC.UseVisualStyleBackColor = False
         ' 
         ' btnDashboard
         ' 
@@ -255,7 +255,7 @@ Partial Class Accounts
         Button5.BackColor = Color.FromArgb(CByte(252), CByte(252), CByte(252))
         Button5.BackgroundImage = CType(resources.GetObject("Button5.BackgroundImage"), Image)
         Button5.FlatStyle = FlatStyle.Flat
-        Button5.ForeColor = Color.FromArgb(CByte(252), CByte(252), CByte(252))
+        Button5.ForeColor = Color.FromArgb(CByte(22), CByte(120), CByte(243))
         Button5.Location = New Point(17, 686)
         Button5.Name = "Button5"
         Button5.Size = New Size(36, 40)
@@ -277,7 +277,7 @@ Partial Class Accounts
         Panel3.Controls.Add(txtSearch)
         Panel3.Controls.Add(PictureBox10)
         Panel3.ForeColor = SystemColors.ControlDarkDark
-        Panel3.Location = New Point(135, 113)
+        Panel3.Location = New Point(135, 106)
         Panel3.Margin = New Padding(4, 3, 4, 3)
         Panel3.Name = "Panel3"
         Panel3.Size = New Size(381, 33)
@@ -319,7 +319,7 @@ Partial Class Accounts
         ' TextBox1
         ' 
         TextBox1.Font = New Font("Segoe UI", 10.8F)
-        TextBox1.Location = New Point(84, 57)
+        TextBox1.Location = New Point(84, 70)
         TextBox1.Name = "TextBox1"
         TextBox1.Size = New Size(342, 31)
         TextBox1.TabIndex = 59
@@ -327,7 +327,7 @@ Partial Class Accounts
         ' TextBox2
         ' 
         TextBox2.Font = New Font("Segoe UI", 10.8F)
-        TextBox2.Location = New Point(84, 138)
+        TextBox2.Location = New Point(84, 151)
         TextBox2.Name = "TextBox2"
         TextBox2.Size = New Size(342, 31)
         TextBox2.TabIndex = 60
@@ -335,7 +335,7 @@ Partial Class Accounts
         ' TextBox3
         ' 
         TextBox3.Font = New Font("Segoe UI", 10.8F)
-        TextBox3.Location = New Point(84, 223)
+        TextBox3.Location = New Point(84, 236)
         TextBox3.Name = "TextBox3"
         TextBox3.Size = New Size(342, 31)
         TextBox3.TabIndex = 61
@@ -343,7 +343,7 @@ Partial Class Accounts
         ' TextBox4
         ' 
         TextBox4.Font = New Font("Segoe UI", 10.8F)
-        TextBox4.Location = New Point(84, 307)
+        TextBox4.Location = New Point(84, 320)
         TextBox4.Name = "TextBox4"
         TextBox4.Size = New Size(342, 31)
         TextBox4.TabIndex = 62
@@ -351,7 +351,7 @@ Partial Class Accounts
         ' TextBox5
         ' 
         TextBox5.Font = New Font("Segoe UI", 10.8F)
-        TextBox5.Location = New Point(84, 393)
+        TextBox5.Location = New Point(84, 406)
         TextBox5.Name = "TextBox5"
         TextBox5.Size = New Size(342, 31)
         TextBox5.TabIndex = 63
@@ -361,7 +361,7 @@ Partial Class Accounts
         Label2.AutoSize = True
         Label2.Font = New Font("Century Gothic", 10.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Label2.ForeColor = Color.DimGray
-        Label2.Location = New Point(84, 33)
+        Label2.Location = New Point(84, 46)
         Label2.Name = "Label2"
         Label2.Size = New Size(98, 21)
         Label2.TabIndex = 64
@@ -372,7 +372,7 @@ Partial Class Accounts
         Label4.AutoSize = True
         Label4.Font = New Font("Century Gothic", 10.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Label4.ForeColor = Color.DimGray
-        Label4.Location = New Point(84, 114)
+        Label4.Location = New Point(84, 127)
         Label4.Name = "Label4"
         Label4.Size = New Size(90, 21)
         Label4.TabIndex = 65
@@ -383,7 +383,7 @@ Partial Class Accounts
         Label5.AutoSize = True
         Label5.Font = New Font("Century Gothic", 10.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Label5.ForeColor = Color.DimGray
-        Label5.Location = New Point(84, 199)
+        Label5.Location = New Point(84, 212)
         Label5.Name = "Label5"
         Label5.Size = New Size(64, 21)
         Label5.TabIndex = 66
@@ -394,7 +394,7 @@ Partial Class Accounts
         Label6.AutoSize = True
         Label6.Font = New Font("Century Gothic", 10.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Label6.ForeColor = Color.DimGray
-        Label6.Location = New Point(84, 283)
+        Label6.Location = New Point(84, 296)
         Label6.Name = "Label6"
         Label6.Size = New Size(80, 21)
         Label6.TabIndex = 67
@@ -405,7 +405,7 @@ Partial Class Accounts
         Label7.AutoSize = True
         Label7.Font = New Font("Century Gothic", 10.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Label7.ForeColor = Color.DimGray
-        Label7.Location = New Point(84, 369)
+        Label7.Location = New Point(84, 382)
         Label7.Name = "Label7"
         Label7.Size = New Size(142, 21)
         Label7.TabIndex = 68
@@ -416,7 +416,7 @@ Partial Class Accounts
         Button6.BackColor = Color.FromArgb(CByte(22), CByte(120), CByte(243))
         Button6.FlatStyle = FlatStyle.Flat
         Button6.Font = New Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Button6.Location = New Point(845, 724)
+        Button6.Location = New Point(834, 724)
         Button6.Name = "Button6"
         Button6.Size = New Size(30, 31)
         Button6.TabIndex = 69
@@ -430,7 +430,7 @@ Partial Class Accounts
         Button7.Font = New Font("Century Gothic", 10.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Button7.Location = New Point(896, 724)
         Button7.Name = "Button7"
-        Button7.Size = New Size(91, 31)
+        Button7.Size = New Size(106, 31)
         Button7.TabIndex = 70
         Button7.Text = "Update"
         Button7.UseVisualStyleBackColor = False
@@ -440,9 +440,9 @@ Partial Class Accounts
         Button8.BackColor = Color.FromArgb(CByte(192), CByte(0), CByte(0))
         Button8.FlatStyle = FlatStyle.Flat
         Button8.Font = New Font("Century Gothic", 10.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Button8.Location = New Point(1008, 724)
+        Button8.Location = New Point(1020, 724)
         Button8.Name = "Button8"
-        Button8.Size = New Size(91, 31)
+        Button8.Size = New Size(108, 31)
         Button8.TabIndex = 71
         Button8.Text = "Delete"
         Button8.UseVisualStyleBackColor = False
@@ -462,9 +462,9 @@ Partial Class Accounts
         grpInfo.Controls.Add(Label5)
         grpInfo.Controls.Add(Label4)
         grpInfo.Font = New Font("Century Gothic", 10.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        grpInfo.Location = New Point(716, 162)
+        grpInfo.Location = New Point(716, 143)
         grpInfo.Name = "grpInfo"
-        grpInfo.Size = New Size(496, 544)
+        grpInfo.Size = New Size(496, 563)
         grpInfo.TabIndex = 72
         grpInfo.TabStop = False
         grpInfo.Text = "User Information"
@@ -474,7 +474,7 @@ Partial Class Accounts
         Label8.AutoSize = True
         Label8.Font = New Font("Century Gothic", 10.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Label8.ForeColor = Color.DimGray
-        Label8.Location = New Point(84, 446)
+        Label8.Location = New Point(84, 459)
         Label8.Name = "Label8"
         Label8.Size = New Size(76, 21)
         Label8.TabIndex = 70
@@ -484,22 +484,22 @@ Partial Class Accounts
         ' 
         ComboBox1.Font = New Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         ComboBox1.FormattingEnabled = True
-        ComboBox1.Location = New Point(84, 470)
+        ComboBox1.Location = New Point(84, 483)
         ComboBox1.Name = "ComboBox1"
         ComboBox1.Size = New Size(342, 33)
         ComboBox1.TabIndex = 69
         ' 
-        ' Button3
+        ' btnP
         ' 
-        Button3.BackColor = Color.Transparent
-        Button3.BackgroundImage = CType(resources.GetObject("Button3.BackgroundImage"), Image)
-        Button3.FlatStyle = FlatStyle.Flat
-        Button3.ForeColor = Color.FromArgb(CByte(252), CByte(252), CByte(252))
-        Button3.Location = New Point(17, 162)
-        Button3.Name = "Button3"
-        Button3.Size = New Size(37, 37)
-        Button3.TabIndex = 73
-        Button3.UseVisualStyleBackColor = False
+        btnP.BackColor = Color.Transparent
+        btnP.BackgroundImage = CType(resources.GetObject("btnP.BackgroundImage"), Image)
+        btnP.FlatStyle = FlatStyle.Flat
+        btnP.ForeColor = Color.FromArgb(CByte(252), CByte(252), CByte(252))
+        btnP.Location = New Point(17, 162)
+        btnP.Name = "btnP"
+        btnP.Size = New Size(37, 37)
+        btnP.TabIndex = 73
+        btnP.UseVisualStyleBackColor = False
         ' 
         ' Accounts
         ' 
@@ -507,7 +507,7 @@ Partial Class Accounts
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.White
         ClientSize = New Size(1289, 809)
-        Controls.Add(Button3)
+        Controls.Add(btnP)
         Controls.Add(grpInfo)
         Controls.Add(Button8)
         Controls.Add(ListBox1)
@@ -518,7 +518,7 @@ Partial Class Accounts
         Controls.Add(btnLogout)
         Controls.Add(Button5)
         Controls.Add(Button1)
-        Controls.Add(Button2)
+        Controls.Add(btnC)
         Controls.Add(btnDashboard)
         Controls.Add(Label1)
         Controls.Add(PictureBox1)
@@ -561,7 +561,7 @@ Partial Class Accounts
     Friend WithEvents PictureBox8 As PictureBox
     Friend WithEvents PictureBox9 As PictureBox
     Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
+    Friend WithEvents btnC As Button
     Friend WithEvents btnDashboard As Button
     Friend WithEvents Label1 As Label
     Friend WithEvents PictureBox1 As PictureBox
@@ -590,5 +590,5 @@ Partial Class Accounts
     Friend WithEvents grpInfo As GroupBox
     Friend WithEvents Label8 As Label
     Friend WithEvents ComboBox1 As ComboBox
-    Friend WithEvents Button3 As Button
+    Friend WithEvents btnP As Button
 End Class
